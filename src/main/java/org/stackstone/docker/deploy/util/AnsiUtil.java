@@ -15,4 +15,8 @@ public class AnsiUtil {
     public static Ansi fgMsg(Ansi.Color color, String s) {
         return ansi().fg(color).a(s);
     }
+
+    public static Ansi fgMsg(Ansi.Color fgColor, Ansi.Color bgColor, String s) {
+        return ansi().fg(fgColor).bg(bgColor).a(s);
+    }
 }
